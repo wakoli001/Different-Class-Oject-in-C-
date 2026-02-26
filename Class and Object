@@ -1,0 +1,88 @@
+#include <iostream>
+#include <string.h>
+
+
+using namespace std;
+
+//Create a class called Book
+//Define everything included in the class and specify the data type it holds
+
+class Book{
+	public :
+		string tittle;
+		string author;
+		string store;
+		int  pages;
+		int year;
+};
+
+//Now write a new class called Car
+
+class Car{
+    public:
+    string name;
+    string manufacturer;
+    string fuel;
+    int price;
+    int buyers;
+    
+};
+
+int main(){
+
+//Now define the object in the class Book and name the object Book1
+
+	Book Book1;
+		Book1.tittle = "The Raging sea";
+		Book1.author ="Harry Portter";
+		Book1.store ="Hillside Library";
+		Book1.pages =450;
+		Book1.year = 1968;
+		
+		//create another object called Car1
+		
+		Car Car1;
+		Car1.name = "Mazda";
+		Car1.manufacturer ="Toyota";
+		Car1.fuel ="Petrol";
+		Car1.price = 458000;
+		Car1.buyers = 45;
+		
+		//create a second object in class Car
+		
+        Car Car2;
+		Car2.name = "Rols Royce";
+		Car2.manufacturer ="Mercedez";
+		Car2.fuel ="Diesel";
+		Car2.price = 1238000;
+		Car2.buyers = 342;
+
+//Now use the standard output to print the attributes of the items declared in the class
+
+cout << "Tittle :" <<Book1.tittle<<endl;
+cout << "Author : " << Book1.author<<endl;
+cout << "Store :"<<Book1.store<<endl;
+cout << "Pages : "<<Book1.pages<< endl;
+cout << "Year of Publish ;"<<Book1.year <<endl;
+cout <<"\n=======================================\n";
+
+//now print the objects in the Car class
+
+cout << "Name : " <<Car1.name <<endl;
+cout << "Manufacturer : " <<Car1.manufacturer <<endl;
+cout << "Type Of Fuel : " <<Car1.fuel <<endl;
+cout << "Purchase Price : " <<Car1.price <<endl;
+cout << "Number Of Buyers 2026 : " <<Car1.buyers<<endl;
+cout <<"\n=======================================\n";
+
+//Now print the second object in the class Car
+
+cout << "Name : " <<Car2.name <<endl;
+cout << "Manufacturer : " <<Car2.manufacturer <<endl;
+cout << "Type Of Fuel : " <<Car2.fuel <<endl;
+cout << "Purchase Price : " <<Car2.price <<endl;
+cout << "Number Of Buyers 2026 : " <<Car2.buyers<<endl;
+cout <<"\n=======================================\n";
+
+return 0;
+}
